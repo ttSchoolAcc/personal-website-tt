@@ -8,56 +8,47 @@ const projectsData = [
   {
     id: 1,
     title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/about-image.png",
+    description: "Created the website you're currently at",
+    image: "/images/Projects/Website.jpg",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/ButterM-40/personal-website",
     previewUrl: "/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/about-image.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Communicative NPC Game",
+    description: "Using LLM we were able to create an interative Boss that can communicate with the Player via voice",
+    image: "/images/Projects/DungeonGPT.jpg",
+    tag: ["All", "Game"],
+    gitUrl: "https://github.com/ButterM-40/Dungeon-Game-3D",
+    previewUrl: "https://www.youtube.com/watch?v=W_adTM71V2w&ab_channel=RamiroSantos",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/about-image.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/about-image.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
+    title: "Project-M347",
+    description: "Horror POV where you play as a scientist trying to escpae the unknown cave.",
+    image: "/images/Projects/Project-M347.png",
+    tag: ["All", "Game"],
+    gitUrl: "https://github.com/ButterM-40/Project-M347",
     previewUrl: "/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
+    title: "Python Langchain",
+    description: "Using OpenAI, constructed a NPC with Story",
     image: "/images/about-image.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/ButterM-40/Langchain-Audio-Conversation",
     previewUrl: "/",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "/images/about-image.png",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Spirit of the Wild",
+    description: "Puzzle Game where the player transform into a totem to use as platforms",
+    image: "/images/Projects/SpiritOfTheWild.png",
+    tag: ["All", "Game"],
+    gitUrl: "https://github.com/ButterM-40/BlitzWaveStudioGameJam70",
+    previewUrl: "https://blitzwavesstudios.itch.io/spirits-of-the-wild",
   },
 ];
 
@@ -99,6 +90,11 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="Mobile"
           isSelected={tag === "Mobile"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Game"
+          isSelected={tag === "Game"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
