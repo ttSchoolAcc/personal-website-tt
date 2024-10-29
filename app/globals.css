@@ -26,6 +26,16 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.bg-\[\#121212\]{
+  background-image: linear-gradient(to bottom right, rgb(136, 120, 72), rgb(7, 0, 10));
+  /* rgb(62, 13, 92) */
+}
+
+div{
+  
+  /* background-color: rgb(83, 42, 108); */
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
